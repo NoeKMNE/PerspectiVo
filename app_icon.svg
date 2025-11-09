@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- Fond gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4F46E5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6366F1;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="crossGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E0E7FF;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Cercle de fond avec ombre -->
+  <circle cx="256" cy="256" r="240" fill="url(#bgGradient)" filter="url(#shadow)"/>
+  
+  <!-- Cercle intérieur -->
+  <circle cx="256" cy="256" r="220" fill="none" stroke="#FFFFFF" stroke-width="3" opacity="0.2"/>
+  
+  <!-- Groupe de personnes stylisé (base) -->
+  <g transform="translate(256, 320)">
+    <!-- Personne centrale -->
+    <g transform="translate(0, -20)">
+      <circle cx="0" cy="-30" r="22" fill="#FFFFFF"/>
+      <path d="M -28 10 Q -28 -10, 0 -10 Q 28 -10, 28 10 L 22 30 Q 22 35, 0 35 Q -22 35, -22 30 Z" 
+            fill="#FFFFFF" opacity="0.95"/>
+    </g>
+    
+    <!-- Personne gauche -->
+    <g transform="translate(-50, -5)" opacity="0.85">
+      <circle cx="0" cy="-25" r="18" fill="#E0E7FF"/>
+      <path d="M -22 8 Q -22 -8, 0 -8 Q 22 -8, 22 8 L 18 25 Q 18 28, 0 28 Q -18 28, -18 25 Z" 
+            fill="#E0E7FF"/>
+    </g>
+    
+    <!-- Personne droite -->
+    <g transform="translate(50, -5)" opacity="0.85">
+      <circle cx="0" cy="-25" r="18" fill="#E0E7FF"/>
+      <path d="M -22 8 Q -22 -8, 0 -8 Q 22 -8, 22 8 L 18 25 Q 18 28, 0 28 Q -18 28, -18 25 Z" 
+            fill="#E0E7FF"/>
+    </g>
+  </g>
+  
+  <!-- Croix stylisée au-dessus -->
+  <g transform="translate(256, 160)">
+    <!-- Barre verticale -->
+    <rect x="-12" y="-60" width="24" height="120" rx="12" fill="url(#crossGradient)" filter="url(#shadow)"/>
+    <!-- Barre horizontale -->
+    <rect x="-50" y="-10" width="100" height="24" rx="12" fill="url(#crossGradient)" filter="url(#shadow)"/>
+    
+    <!-- Détails décoratifs -->
+    <circle cx="0" cy="0" r="16" fill="#FFFFFF" opacity="0.3"/>
+  </g>
+  
+  <!-- Points décoratifs -->
+  <circle cx="140" cy="140" r="6" fill="#FFFFFF" opacity="0.4"/>
+  <circle cx="372" cy="140" r="6" fill="#FFFFFF" opacity="0.4"/>
+  <circle cx="140" cy="372" r="6" fill="#FFFFFF" opacity="0.4"/>
+  <circle cx="372" cy="372" r="6" fill="#FFFFFF" opacity="0.4"/>
+  
+  <!-- Arc supérieur décoratif -->
+  <path d="M 180 100 Q 256 80, 332 100" fill="none" stroke="#FFFFFF" stroke-width="3" opacity="0.3"/>
+</svg>
